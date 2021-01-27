@@ -150,20 +150,25 @@ while(convKata == []) and (i < len(permutationList)):
     i += 1
 
 # Mencetak hasil
-print("Result:\n")
-for kata in convKata:
-    if(convKata.index(kata) == len(convKata) - 1):
-        space = len(result) - len(str(kata))
-        print("+", end="")
-    else:
-        space = len(result) - len(str(kata)) + 1
-    print(space*" " + str(kata))
+if(convKata == []):
+    print("Persoalan ini tidak memiliki penyelesaian.")
+else:
+    print("Result:\n")
+    for kata in convKata:
+        if(convKata.index(kata) == len(convKata) - 1):
+            space = len(result) - len(str(kata))
+            print("+", end="")
+        else:
+            space = len(result) - len(str(kata)) + 1
+        print(space*" " + str(kata))
 
-print((len(result)+1) * "-")
-print(" " + str(convResult))
+    print((len(result)+1) * "-")
+    print(" " + str(convResult))
 
 # Mencetak waktu eksekusi dan jumlah percobaan
 print("========================================")
 print("Waktu eksekusi: %.2f detik" %(time.time()-start_time))
 print("Jumlah percobaan: %d percobaan" %(i))
 print("========================================")
+
+input()
