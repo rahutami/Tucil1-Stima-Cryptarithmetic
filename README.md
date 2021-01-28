@@ -8,7 +8,7 @@ Cryptarithmetic (atau cryptarithm)adalah sebuah puzzle penjumlahan di dalam mate
 1. Pilih salah satu:
    1. Pada folder bin, jalankan program.exe yang tersedia.
    2. Jika sudah menginstall python, buka folder src melalui command line dan jalankan command `python program.py`
-2. Masukkin input berupa path ke directory file txt yang berisi persoalan cryptarithmetic. Pastikan input sudah benar.  
+2. Masukkan input berupa path ke directory file txt yang berisi persoalan cryptarithmetic. Pastikan input sudah benar.  
   (contoh: ../test/test1.txt jika ingin menggunakan file persoalan yang tersedia)
 3. Tunggu hingga program selesai berjalan.
 4. Setelah program mengeluarkan hasil, tekan enter untuk keluar dari program
